@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "@fontsource/poppins";
+@import "@fontsource/cormorant-garamond";
+
+:root {
+  --ivory: #f8f3ec;
+  --paper: #fffdf8;
+  --ink: #332d2a;
+  --muted: #81756e;
+  --rose: #b9857d;
+  --blush: #e9d6d0;
+  --gold: #b5965a;
+  --line: rgba(181, 150, 90, 0.28);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--ivory); }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--ink);
+  background: var(--ivory);
+  overflow-x: hidden;
+}
+button, a, input, textarea { font: inherit; }
+::selection { background: var(--blush); color: var(--ink); }
+
+.font-display { font-family: "Cormorant Garamond", serif; }
+.paper-grain {
+  background-image:
+    radial-gradient(rgba(51,45,42,.045) .7px, transparent .7px),
+    radial-gradient(rgba(181,150,90,.035) .7px, transparent .7px);
+  background-position: 0 0, 13px 13px;
+  background-size: 26px 26px;
+}
+.gold-line {
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.ornament {
+  letter-spacing: .35em;
+  color: var(--gold);
+}
+
+@keyframes floatPetal {
+  0% { transform: translate3d(0,-10vh,0) rotate(0deg); opacity: 0; }
+  12% { opacity: .7; }
+  88% { opacity: .55; }
+  100% { transform: translate3d(45px,110vh,0) rotate(260deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
