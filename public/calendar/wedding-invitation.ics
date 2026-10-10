@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Maruf Wedding//EN
+
+BEGIN:VEVENT
+UID:maruf-mantasha-wedding-20261026
+DTSTAMP:20261001T120000Z
+DTSTART:20261026T123000Z
+DTEND:20261026T170000Z
+SUMMARY:Joint Dawat-e-Walima
+LOCATION:Ansari Jamat Khana, Padana
+DESCRIPTION:You are warmly invited to our wedding celebration.
+END:VEVENT
+
+END:VCALENDAR
