@@ -90,9 +90,7 @@ JazakAllah Khair.`);
                 {person.name}
               </h3>
 
-              <p className="mt-2 text-xs uppercase tracking-[4px] text-gray-400">
-                {person.relation}
-              </p>
+            
 
               {/* Phone */}
 
@@ -118,7 +116,7 @@ JazakAllah Khair.`);
         <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:justify-center">
 
           <a
-            href={`https://wa.me/${weddingConfig.whatsapp}?text=${whatsappMessage}`}
+            href={`https://wa.me/${weddingConfig.contactPersons[0].phone.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`}
             target="_blank"
             rel="noreferrer"
             className="flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-lg font-semibold text-white shadow-[0_0_30px_rgba(37,211,102,.35)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_45px_rgba(37,211,102,.45)] active:scale-95 sm:w-auto"
