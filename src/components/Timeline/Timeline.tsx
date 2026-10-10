@@ -58,11 +58,12 @@ export default function Timeline() {
         {weddingConfig.events.map((event, index) => (
 
           <TimelineItem
-            key={index}
-            {...event}
-            index={index}
-            isLast={index === weddingConfig.events.length - 1}
-          />
+  key={index}
+  {...event}
+  venue={event.venue}
+  index={index}
+  isLast={index === weddingConfig.events.length - 1}
+/>
 
         ))}
 
