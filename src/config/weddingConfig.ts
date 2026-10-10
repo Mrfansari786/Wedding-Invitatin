@@ -20,13 +20,14 @@ export const weddingConfig = {
   address: "Ansari Jamat Khana, Padana",
   mapLink: "https://maps.google.com/?q=Ansari+Jamat+Khana+Padana",
 
-  events: [
+    events: [
     {
       title: "Nikah",
       couple: "Maruf & Mantasha",
       date: "25 October",
       time: "After Namaz-e-Zohr",
       icon: "01",
+      venue: "Ansari Jamat Khana, Padana",
     },
     {
       title: "Nikah",
@@ -34,6 +35,7 @@ export const weddingConfig = {
       date: "26 October",
       time: "After Namaz-e-Asr",
       icon: "02",
+      venue: "Ansari Jamat Khana, Padana",
     },
     {
       title: "Dawat-e-Walima",
@@ -41,6 +43,7 @@ export const weddingConfig = {
       date: "26 October",
       time: "10:00 AM onwards",
       icon: "03",
+      venue: "Ansari Jamat Khana, Padana",
     },
   ],
 
